@@ -1,7 +1,7 @@
 FROM maven:alpine
 MAINTAINER hyness <hyness@freshlegacycode.org>
 
-EXPOSE 8888
+EXPOSE 8080
 COPY . /opt/turbine-hystrix-dashboard/
 WORKDIR /opt/turbine-hystrix-dashboard/
 RUN mvn package
